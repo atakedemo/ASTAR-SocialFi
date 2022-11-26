@@ -70,7 +70,7 @@ impl AstarSnsContract {
             .unwrap()
             .last()
             .unwrap()
-            .clone()
+            .clone();
         last_message
     }
 }

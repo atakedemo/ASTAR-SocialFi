@@ -3,7 +3,7 @@ use ink_env::AccountId;
 use ink_prelude::string::String;
 use ink_prelude::vec::Vec;
 
-use create:: astar_sns_contract::AstaerSnsContract;
+use crate::astar_sns_contract::AstarSnsContract;
 
 impl AstarSnsContract {
     // 新しいユーザーのウォレットに接続した際に自動的に実行されるプロフィール作成関数

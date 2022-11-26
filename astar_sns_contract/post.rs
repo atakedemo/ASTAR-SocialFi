@@ -1,4 +1,4 @@
-use crate::metadata::\*;
+use crate::metadata::*;
 use ink_env::AccountId;
 use ink_prelude::string::String;
 use ink_prelude::string::ToString;
@@ -8,13 +8,13 @@ use crate::astar_sns_contract::AstarSnsContract;
 
 impl AstarSnsContract {
     //投稿するための関数
-    pub fn release_post_fn{
+    pub fn release_post_fn (
         &mut self,
         account_id: AccountId,
         description: String,
         created_time: String,
         post_img_url: String,
-    } {
+     ) {
         //指定されたウォレットアドレスに紐づいたプロフィール
         let profile_info: Profile = self.profile_map.get(&account_id).unwrap();
 
